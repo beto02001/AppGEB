@@ -14,13 +14,13 @@ struct Harris: View {
     @State private var talla: String = ""
     @State private var sexo: Bool = true
     var body: some View {
-        VStack(alignment: .center, spacing: 20){
+        VStack(alignment: .center, spacing: 15){
             Text("Harris Benedict")
                 .font(.largeTitle)
                 .foregroundColor(.white)
                 .bold()
                 .padding(.top)
-            
+                
             TextField("Edad del paciente", text: $edad)
                 .keyboardType(.numberPad)
                 .padding()
@@ -71,6 +71,7 @@ struct Harris: View {
         }.padding(.all)
         .background(LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue]), startPoint: .bottom, endPoint: .top))
         .navigationTitle("Harris benedict")
+
     }
 }
 
