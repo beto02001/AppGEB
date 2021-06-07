@@ -13,7 +13,6 @@ struct Harris: View {
     @State private var edad: String = ""
     @State private var talla: String = ""
     @State private var sexo: Bool = true
-    @State private var selectedColorIndex = 0
     var body: some View {
         VStack(spacing: 24){
             Text("Harris Benedict")

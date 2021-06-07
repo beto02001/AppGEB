@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var ventana: Bool = false
+    @State private var modal: Bool = false
    
     var body: some View {
         NavigationView{
@@ -32,12 +32,24 @@ struct ContentView: View {
                     .cornerRadius(16)
                     .foregroundColor(.white)
                     
-                NavigationLink(destination: VistaOMS(),label: {Text("Mifflin").padding(.all,25)})
+                NavigationLink(destination: VistaMifflin(),label: {Text("Mifflin").padding(.all,25)})
                     .navigationBarTitle("Formulas", displayMode: .inline)
                     .background(Color.orange)
                     .cornerRadius(16)
                     .foregroundColor(.white)
                 Spacer()
+                
+                Button("Fuentes"){
+                    self.modal.toggle()
+                }.sheet(isPresented: self.$modal){
+                    VStack{
+                        fuentes()
+                        Button("Atrás"){
+                            self.modal.toggle()
+                        }
+                    }
+                }.padding()
+                .foregroundColor(.white)
             }.frame(width: 500)
             .background(LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue]), startPoint: .bottom, endPoint: .top))
         }
@@ -50,20 +62,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView().environment(\.colorScheme, .dark)
     }
 }
-
-
-/*NavigationView{
-    VStack(alignment: .center, spacing: 40){
-            
-        NavigationLink(destination: Harris(),label: {Text("Harris-Benedict")})
-            .navigationBarTitle("Formulas", displayMode: .inline)
-            .padding(.top, 50)
-            
-        NavigationLink(destination: VistaOMS(),label: {Text("FAM/OMS")})
-
-        NavigationLink(destination: vistaIOM(),label: {Text("IOM")})
-            
-        NavigationLink(destination: VistaOMS(),label: {Text("Mifflin")})
-        Spacer()
-    }
-}*/

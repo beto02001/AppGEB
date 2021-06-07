@@ -11,7 +11,7 @@ import Foundation
 struct VistaOMS: View {
     @State private var peso: String = ""
     @State private var edad: String = ""
-    
+    @State private var sexo: Bool = true
     var body: some View {
         VStack(spacing: 35){
             Text("OMS")
@@ -39,12 +39,21 @@ struct VistaOMS: View {
                     .cornerRadius(5)
                     .foregroundColor(.white)
                     .accentColor(.white)
+                
+                Picker("Sexo", selection: $sexo,
+                       content: {
+                            Text("Hombre").tag(true)
+                            Text("Mujer").tag(false)
+                        })
+                        .pickerStyle(SegmentedPickerStyle())
+                        .background(Color.gray.opacity(0.1))
+                        .padding(.top)
             }
-            let TGE = OMS(anios: edad, peso: peso)
+            let TGE = OMS(anios: edad, peso: peso, sexo: sexo)
             let mayoredad = Float(edad) ?? 0
         
             if mayoredad < 18{
-                Text("Dijite una una edad mayor a 18")
+                Text("Digite una una edad mayor a 18")
                     .foregroundColor(.white)
                     .font(.title3)
             }else{
