@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D14F03D8266BD7B400C470D9 /* vistaIOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F03D7266BD7B400C470D9 /* vistaIOM.swift */; };
-		D15872F12666E86A000CFB8D /* ListaFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15872F02666E86A000CFB8D /* ListaFormulas.swift */; };
 		D196E112266DCAF1001FC120 /* VistaMifflin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196E111266DCAF1001FC120 /* VistaMifflin.swift */; };
 		D196E114266DEE49001FC120 /* fuentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196E113266DEE49001FC120 /* fuentes.swift */; };
 		D19E672926655D5100D3F74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E672826655D5100D3F74B /* AppDelegate.swift */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		D1490C83266BFAEC004E0D98 /* Intento de forfmulario.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Intento de forfmulario.entitlements"; sourceTree = "<group>"; };
 		D14F03D7266BD7B400C470D9 /* vistaIOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vistaIOM.swift; sourceTree = "<group>"; };
-		D15872F02666E86A000CFB8D /* ListaFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaFormulas.swift; sourceTree = "<group>"; };
 		D196E111266DCAF1001FC120 /* VistaMifflin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaMifflin.swift; sourceTree = "<group>"; };
 		D196E113266DEE49001FC120 /* fuentes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuentes.swift; sourceTree = "<group>"; };
 		D19E672526655D5100D3F74B /* Intento de forfmulario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intento de forfmulario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +91,6 @@
 				D19E673326655D5300D3F74B /* LaunchScreen.storyboard */,
 				D19E673626655D5300D3F74B /* Info.plist */,
 				D19E673026655D5300D3F74B /* Preview Content */,
-				D15872F02666E86A000CFB8D /* ListaFormulas.swift */,
 			);
 			path = "Intento de forfmulario";
 			sourceTree = "<group>";
@@ -176,7 +173,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D15872F12666E86A000CFB8D /* ListaFormulas.swift in Sources */,
 				D196E112266DCAF1001FC120 /* VistaMifflin.swift in Sources */,
 				D196E114266DEE49001FC120 /* fuentes.swift in Sources */,
 				D1B315942667D89800D5E63A /* VistaOMS.swift in Sources */,

@@ -9,7 +9,15 @@ import SwiftUI
 
 struct fuentes: View {
     var body: some View {
-        Text("hOLA, soy fuentes")
+        VStack(spacing: 25){
+            Text("Fuentes").bold().font(.title)
+                .foregroundColor(.blue)
+            Text("Mifflin MD, St Jeor ST, Hill LA, Scott BJ, Daugherty SA, Koh YO. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr 1990; 51 (2): 241-247.")
+            
+            Text("FAO/WHO/UNU. Energy and Protein Requirements. Report of a Joint FAO/WHO/UNU Expert Consultation World Health Organization Technical Report Series 724. Geneva, Switzer- land: WHO: 1985.")
+            
+            Text("Harris JA, Benedict FG. A biometric study of basal metabolism in man. W ashington DC: Carnegie Institute of W ashington. 681 Publication No 279, 1919.")
+        }.padding()
     }
 }
 
