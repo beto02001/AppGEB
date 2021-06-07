@@ -42,11 +42,14 @@ struct ContentView: View {
                 Button("Fuentes"){
                     self.modal.toggle()
                 }.sheet(isPresented: self.$modal){
-                    VStack{
+                    VStack(alignment: .center){
+                        Spacer()
                         fuentes()
+                        Spacer()
                         Button("Atrás"){
                             self.modal.toggle()
-                        }
+                        }.foregroundColor(.black)
+                       
                     }
                 }.padding()
                 .foregroundColor(.white)
