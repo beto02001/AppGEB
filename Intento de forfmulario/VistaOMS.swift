@@ -13,28 +13,33 @@ struct VistaOMS: View {
     @State private var edad: String = ""
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20){
+        VStack(spacing: 35){
             Text("OMS")
                 .font(.largeTitle)
                 .foregroundColor(.white)
                 .bold()
             
-            TextField("Edad del paciente", text: $edad)
-                .keyboardType(.numberPad)
-                .padding()
-                .border(Color.white, width: 2)
-                .cornerRadius(5)
-                .foregroundColor(.white)
-                .accentColor(.white)
+            VStack(alignment: .leading, spacing: 15){
+                Text("Edad:")
+                    .font(.body).foregroundColor(.white)
+                TextField("Edad", text: $edad)
+                    .keyboardType(.numberPad)
+                    .padding()
+                    .border(Color.white, width: 2)
+                    .cornerRadius(5)
+                    .foregroundColor(.white)
+                    .accentColor(.white)
                 
-            TextField("Peso del paciente", text: $peso)
-                .keyboardType(.decimalPad)
-                .padding()
-                .border(Color.white, width: 2)
-                .cornerRadius(5)
-                .foregroundColor(.white)
-                .accentColor(.white)
-                
+                Text("Peso del paciente kg:")
+                    .font(.body).foregroundColor(.white)
+                TextField("Peso", text: $peso)
+                    .keyboardType(.decimalPad)
+                    .padding()
+                    .border(Color.white, width: 2)
+                    .cornerRadius(5)
+                    .foregroundColor(.white)
+                    .accentColor(.white)
+            }
             let TGE = OMS(anios: edad, peso: peso)
             let mayoredad = Float(edad) ?? 0
         
@@ -48,7 +53,6 @@ struct VistaOMS: View {
                     .font(.title3)
             }
             Spacer()
-            
         }.padding(.all)
         .background(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .bottom, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
         .navigationTitle("OMS")
