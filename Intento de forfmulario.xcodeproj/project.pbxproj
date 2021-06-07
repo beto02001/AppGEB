@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D14F03D8266BD7B400C470D9 /* vistaIOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F03D7266BD7B400C470D9 /* vistaIOM.swift */; };
 		D15872F12666E86A000CFB8D /* ListaFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15872F02666E86A000CFB8D /* ListaFormulas.swift */; };
+		D196E112266DCAF1001FC120 /* VistaMifflin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196E111266DCAF1001FC120 /* VistaMifflin.swift */; };
+		D196E114266DEE49001FC120 /* fuentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196E113266DEE49001FC120 /* fuentes.swift */; };
 		D19E672926655D5100D3F74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E672826655D5100D3F74B /* AppDelegate.swift */; };
 		D19E672B26655D5100D3F74B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E672A26655D5100D3F74B /* SceneDelegate.swift */; };
 		D19E672D26655D5100D3F74B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E672C26655D5100D3F74B /* ContentView.swift */; };
@@ -24,6 +26,8 @@
 		D1490C83266BFAEC004E0D98 /* Intento de forfmulario.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Intento de forfmulario.entitlements"; sourceTree = "<group>"; };
 		D14F03D7266BD7B400C470D9 /* vistaIOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vistaIOM.swift; sourceTree = "<group>"; };
 		D15872F02666E86A000CFB8D /* ListaFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaFormulas.swift; sourceTree = "<group>"; };
+		D196E111266DCAF1001FC120 /* VistaMifflin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaMifflin.swift; sourceTree = "<group>"; };
+		D196E113266DEE49001FC120 /* fuentes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuentes.swift; sourceTree = "<group>"; };
 		D19E672526655D5100D3F74B /* Intento de forfmulario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intento de forfmulario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19E672826655D5100D3F74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D19E672A26655D5100D3F74B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D17C76F0266E7A2800CD10A1 /* Vistas formulas */ = {
+			isa = PBXGroup;
+			children = (
+				D196E111266DCAF1001FC120 /* VistaMifflin.swift */,
+				D14F03D7266BD7B400C470D9 /* vistaIOM.swift */,
+				D1AE2F9D26688A9000C48387 /* Harris.swift */,
+				D1B315932667D89800D5E63A /* VistaOMS.swift */,
+			);
+			path = "Vistas formulas";
+			sourceTree = "<group>";
+		};
 		D19E671C26655D5100D3F74B = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +85,11 @@
 				D1490C83266BFAEC004E0D98 /* Intento de forfmulario.entitlements */,
 				D19E672826655D5100D3F74B /* AppDelegate.swift */,
 				D1B315912667D47C00D5E63A /* formulasGE.swift */,
+				D17C76F0266E7A2800CD10A1 /* Vistas formulas */,
 				D19E672A26655D5100D3F74B /* SceneDelegate.swift */,
-				D1B315932667D89800D5E63A /* VistaOMS.swift */,
 				D19E672C26655D5100D3F74B /* ContentView.swift */,
-				D1AE2F9D26688A9000C48387 /* Harris.swift */,
+				D196E113266DEE49001FC120 /* fuentes.swift */,
 				D19E672E26655D5300D3F74B /* Assets.xcassets */,
-				D14F03D7266BD7B400C470D9 /* vistaIOM.swift */,
 				D19E673326655D5300D3F74B /* LaunchScreen.storyboard */,
 				D19E673626655D5300D3F74B /* Info.plist */,
 				D19E673026655D5300D3F74B /* Preview Content */,
@@ -163,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D15872F12666E86A000CFB8D /* ListaFormulas.swift in Sources */,
+				D196E112266DCAF1001FC120 /* VistaMifflin.swift in Sources */,
+				D196E114266DEE49001FC120 /* fuentes.swift in Sources */,
 				D1B315942667D89800D5E63A /* VistaOMS.swift in Sources */,
 				D19E672926655D5100D3F74B /* AppDelegate.swift in Sources */,
 				D1AE2F9E26688A9000C48387 /* Harris.swift in Sources */,
