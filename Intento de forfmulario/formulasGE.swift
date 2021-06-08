@@ -33,9 +33,9 @@ func OMS(anios : String, peso : String, sexo : Bool) -> Float {
             GER = 14.7 * pesoF + 496
         }else{
             if aniosF <= 60 {
-                GER = 11.6 * pesoF + 879
+                GER = 8.7 * pesoF + 829
             }else{
-                GER = 13.5 * pesoF + 487
+                GER = 10.5 * pesoF + 596
             }
         }
     }
