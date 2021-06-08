@@ -48,7 +48,7 @@ struct ContentView: View {
                         Spacer()
                         Button("Atrás"){
                             self.modal.toggle()
-                        }.foregroundColor(.black)
+                        }.foregroundColor(Color("ColorTextoFuentes"))
                        
                     }
                 }.padding()
