@@ -9,34 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var modal: Bool = false
-   
     var body: some View {
         NavigationView{
             VStack(alignment: .center, spacing: 40){
                 Spacer()
                 NavigationLink(destination: Harris(),label: {Text("Harris-Benedict") .padding(.all,25)})
-                    .navigationBarTitle("Formulas", displayMode: .inline)
-                    .background(Color.orange)
-                    .cornerRadius(16)
-                    .foregroundColor(.white)
+                    .modifier(boton())
                     
                 NavigationLink(destination: VistaOMS(),label: {Text("FAM/OMS").padding(.all,25)})
-                    .navigationBarTitle("Formulas", displayMode: .inline)
-                    .background(Color.orange)
-                    .cornerRadius(16)
-                    .foregroundColor(.white)
+                    .modifier(boton())
 
                 NavigationLink(destination:   vistaIOM(),label: {Text("IOM").padding(.all,25)})
-                    .navigationBarTitle("Formulas", displayMode: .inline)
-                    .background(Color.orange)
-                    .cornerRadius(16)
-                    .foregroundColor(.white)
+                    .modifier(boton())
                     
                 NavigationLink(destination: VistaMifflin(),label: {Text("Mifflin").padding(.all,25)})
-                    .navigationBarTitle("Formulas", displayMode: .inline)
-                    .background(Color.orange)
-                    .cornerRadius(16)
-                    .foregroundColor(.white)
+                    .modifier(boton())
                 Spacer()
                 
                 Button("Fuentes"){
@@ -56,7 +43,6 @@ struct ContentView: View {
             }.frame(width: 500)
             .background(LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue]), startPoint: .bottom, endPoint: .top))
         }
-        
     }
 }
 

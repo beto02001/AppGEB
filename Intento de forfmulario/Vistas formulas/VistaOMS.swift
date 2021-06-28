@@ -23,22 +23,12 @@ struct VistaOMS: View {
                 Text("Edad:")
                     .font(.body).foregroundColor(.white)
                 TextField("Edad", text: $edad)
-                    .keyboardType(.numberPad)
-                    .padding()
-                    .border(Color.white, width: 2)
-                    .cornerRadius(5)
-                    .foregroundColor(.white)
-                    .accentColor(.white)
+                    .modifier(diseñotext(teclado: .numberPad))
                 
                 Text("Peso del paciente kg:")
                     .font(.body).foregroundColor(.white)
                 TextField("Peso", text: $peso)
-                    .keyboardType(.decimalPad)
-                    .padding()
-                    .border(Color.white, width: 2)
-                    .cornerRadius(5)
-                    .foregroundColor(.white)
-                    .accentColor(.white)
+                    .modifier(diseñotext(teclado: .decimalPad))
                 
                 Picker("Sexo", selection: $sexo,
                        content: {

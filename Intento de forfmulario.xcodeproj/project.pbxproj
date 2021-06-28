@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1091116268A4D24004D97FF /* VistaModificadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1091115268A4D24004D97FF /* VistaModificadora.swift */; };
 		D14F03D8266BD7B400C470D9 /* vistaIOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F03D7266BD7B400C470D9 /* vistaIOM.swift */; };
-		D196E112266DCAF1001FC120 /* VistaMifflin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196E111266DCAF1001FC120 /* VistaMifflin.swift */; };
+		D1906D852671B3B200345907 /* VistaMifflin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196E111266DCAF1001FC120 /* VistaMifflin.swift */; };
 		D196E114266DEE49001FC120 /* fuentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196E113266DEE49001FC120 /* fuentes.swift */; };
 		D19E672926655D5100D3F74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E672826655D5100D3F74B /* AppDelegate.swift */; };
 		D19E672B26655D5100D3F74B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E672A26655D5100D3F74B /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1091115268A4D24004D97FF /* VistaModificadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaModificadora.swift; sourceTree = "<group>"; };
 		D1490C83266BFAEC004E0D98 /* Intento de forfmulario.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Intento de forfmulario.entitlements"; sourceTree = "<group>"; };
 		D14F03D7266BD7B400C470D9 /* vistaIOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vistaIOM.swift; sourceTree = "<group>"; };
 		D196E111266DCAF1001FC120 /* VistaMifflin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaMifflin.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				D1490C83266BFAEC004E0D98 /* Intento de forfmulario.entitlements */,
 				D19E672826655D5100D3F74B /* AppDelegate.swift */,
 				D1B315912667D47C00D5E63A /* formulasGE.swift */,
+				D1091115268A4D24004D97FF /* VistaModificadora.swift */,
 				D17C76F0266E7A2800CD10A1 /* Vistas formulas */,
 				D19E672A26655D5100D3F74B /* SceneDelegate.swift */,
 				D19E672C26655D5100D3F74B /* ContentView.swift */,
@@ -173,8 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D196E112266DCAF1001FC120 /* VistaMifflin.swift in Sources */,
 				D196E114266DEE49001FC120 /* fuentes.swift in Sources */,
+				D1906D852671B3B200345907 /* VistaMifflin.swift in Sources */,
 				D1B315942667D89800D5E63A /* VistaOMS.swift in Sources */,
 				D19E672926655D5100D3F74B /* AppDelegate.swift in Sources */,
 				D1AE2F9E26688A9000C48387 /* Harris.swift in Sources */,
@@ -182,6 +185,7 @@
 				D14F03D8266BD7B400C470D9 /* vistaIOM.swift in Sources */,
 				D1B315922667D47C00D5E63A /* formulasGE.swift in Sources */,
 				D19E672D26655D5100D3F74B /* ContentView.swift in Sources */,
+				D1091116268A4D24004D97FF /* VistaModificadora.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

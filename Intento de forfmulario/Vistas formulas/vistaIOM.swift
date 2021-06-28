@@ -24,31 +24,16 @@ struct vistaIOM: View {
                 Text("Edad:")
                     .font(.body).foregroundColor(.white)
                 TextField("Edad", text: $edad)
-                    .keyboardType(.numberPad)
-                    .padding()
-                    .border(Color.white, width: 2)
-                    .cornerRadius(5)
-                    .foregroundColor(.white)
-                    .accentColor(.white)
+                    .modifier(diseñotext(teclado: .numberPad))
                 Text("Talla del paciente metros:")
                     .font(.body).foregroundColor(.white)
                 TextField("Talla", text: $talla)
-                    .keyboardType(.numberPad)
-                    .padding()
-                    .border(Color.white, width: 2)
-                    .cornerRadius(5)
-                    .foregroundColor(.white)
-                    .accentColor(.white)
+                    .modifier(diseñotext(teclado: .decimalPad))
                 
                 Text("Peso del paciente kg:")
                     .font(.body).foregroundColor(.white)
                 TextField("Peso", text: $peso)
-                    .keyboardType(.decimalPad)
-                    .padding()
-                    .border(Color.white, width: 2)
-                    .cornerRadius(5)
-                    .foregroundColor(.white)
-                    .accentColor(.white)
+                    .modifier(diseñotext(teclado: .decimalPad))
             }
             
             
@@ -76,3 +61,4 @@ struct vistaIOM_Previews: PreviewProvider {
         vistaIOM()
     }
 }
+
